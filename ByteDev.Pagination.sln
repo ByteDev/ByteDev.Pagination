@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ByteDev.Pagination", "src\ByteDev.Pagination\ByteDev.Pagination.csproj", "{1778B351-3222-41BF-89BA-5ADEA842966D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EBA955A1-595D-49A5-883A-6B53F39257A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ByteDev.Pagination.UnitTests", "tests\ByteDev.Pagination.UnitTests\ByteDev.Pagination.UnitTests.csproj", "{F11D2F1B-2660-48D7-A998-7245F9D08229}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ByteDev.Pagination.WebUi", "src\ByteDev.Pagination.WebUi\ByteDev.Pagination.WebUi.csproj", "{A9ECFD71-2701-4DB1-9828-732F5EC3780E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{BEFB1C85-D4ED-4783-B045-A123D750125D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		docs\RELEASE-NOTES.md = docs\RELEASE-NOTES.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{8F39A3D6-9488-45D0-9F89-B7B9FECD5CEE}"
+	ProjectSection(SolutionItems) = preProject
+		build\build.cake = build\build.cake
+		build\ByteDev.Pagination.nuspec = build\ByteDev.Pagination.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1778B351-3222-41BF-89BA-5ADEA842966D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1778B351-3222-41BF-89BA-5ADEA842966D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1778B351-3222-41BF-89BA-5ADEA842966D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1778B351-3222-41BF-89BA-5ADEA842966D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11D2F1B-2660-48D7-A998-7245F9D08229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11D2F1B-2660-48D7-A998-7245F9D08229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11D2F1B-2660-48D7-A998-7245F9D08229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11D2F1B-2660-48D7-A998-7245F9D08229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9ECFD71-2701-4DB1-9828-732F5EC3780E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9ECFD71-2701-4DB1-9828-732F5EC3780E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9ECFD71-2701-4DB1-9828-732F5EC3780E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9ECFD71-2701-4DB1-9828-732F5EC3780E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F11D2F1B-2660-48D7-A998-7245F9D08229} = {EBA955A1-595D-49A5-883A-6B53F39257A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB75B5C8-A5DC-4290-B7C9-3ED2CE789244}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ByteDev.Pagination</id>
+    <title>ByteDev.Pagination</title>
+    <version>0.0.1</version>
+    <authors>Paul Stanley</authors>
+    <owners>Paul Stanley</owners>
+    <copyright>Copyright 2019</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides a simple framework for handling data pagination from within any kind of .NET system.</description>
+    <tags>pagination paging page data records search</tags>
+    <projectUrl>https://github.com/ByteDev/ByteDev.Pagination</projectUrl>
+    <icon>images\icon.png</icon>
+    <license type="file">LICENSE</license>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\src\ByteDev.Pagination\bin\Release\netstandard2.0\ByteDev.Pagination.dll" target="lib\netstandard2.0" />
+    <file src="..\src\ByteDev.Pagination\bin\Release\netstandard2.0\ByteDev.Pagination.xml" target="lib\netstandard2.0" />
+    <file src="..\images\icon.png" target="images\" />
+    <file src="..\LICENSE*" target="" />
+  </files>
+</package>

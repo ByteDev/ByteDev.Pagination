@@ -1,0 +1,38 @@
+﻿@model WebApplication1.Models.IndexViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pagination Test</title>
+</head>
+
+<body>
+<style>
+    a {
+        color: #0000ff;
+    }
+</style>
+<div>
+    PageNumber: @Model.PaginationPage.PageNumber<br />
+    PageSize: @Model.PaginationPage.PageSize<br />
+    TotalItems: @Model.PaginationPage.TotalItems<br/>
+    HasMoreThanOnePage: @Model.PaginationPage.HasMoreThanOnePage<br/>
+    <br/>
+    IsFirstPage: @Model.PaginationPage.IsFirstPage<br/>
+    IsLastPage: @Model.PaginationPage.IsLastPage<br/>
+    <br/>
+    NextPageNumber: @Model.PaginationPage.NextPageNumber<br/>
+    PreviousPageNumber: @Model.PaginationPage.PreviousPageNumber<br/>
+    <br/>
+    FirstPageNumber: @Model.PaginationPage.FirstPageNumber<br/>
+    LastPageNumber: @Model.PaginationPage.LastPageNumber<br/>
+    <hr/>
+    @{ Html.RenderPartial("PaginationPartial", Model.PaginationPage); }
+</div>
+</body>
+</html>

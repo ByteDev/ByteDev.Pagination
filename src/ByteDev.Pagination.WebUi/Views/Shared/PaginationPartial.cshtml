@@ -1,0 +1,40 @@
+﻿@model ByteDev.Pagination.Presentation.PaginationPageViewModel
+
+@if (Model.HasMoreThanOnePage)
+{
+    <div>
+        @if (Model.IsFirstPage)
+        {
+            <span>&lt;&lt;</span>
+            <span>&lt;</span>
+        }
+        else
+        {
+            <a href="@Url.Action("Index", "Home", new {pageNumber = Model.FirstPageNumber})">&lt;&lt;</a>
+            <a href="@Url.Action("Index", "Home", new {pageNumber = Model.PreviousPageNumber})">&lt;</a>
+        }
+
+        @foreach (var pageNumber in Model.PageNavigationNumbers)
+        {
+            if (pageNumber.IsCurrentPage)
+            {
+                <span>@pageNumber.DisplayNumber</span>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", "Home", new {pageNumber = pageNumber.Number})">@pageNumber.DisplayNumber</a>
+            }
+        }
+
+        @if (Model.IsLastPage)
+        {
+            <span>&gt;</span>
+            <span>&gt;&gt;</span>
+        }
+        else
+        {
+            <a href="@Url.Action("Index", "Home", new {pageNumber = Model.NextPageNumber})">&gt;</a>
+            <a href="@Url.Action("Index", "Home", new {pageNumber = Model.LastPageNumber})">&gt;&gt;</a>
+        }
+    </div>
+}
